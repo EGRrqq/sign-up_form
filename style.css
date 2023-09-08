@@ -1,0 +1,75 @@
+@font-face {
+  font-family: Norse-bold;
+  src: url(./public/Norse-Bold.otf);
+}
+
+:root {
+  --font-color: white;
+}
+
+*,
+*::after,
+*::before {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.left-side, figure {
+  position: relative;
+}
+
+.bg-image {
+  max-height: 100vh;
+  width: auto;
+}
+
+.on-top-image {
+  position: absolute;
+  z-index: 1;
+  top: 10%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0, 0.5);
+  width: 100%;
+  padding: 0.5rem 0;
+  gap: 0.5rem;
+}
+
+.odin-logo-image {
+  max-height: 7rem;
+  width: auto;
+}
+
+.odin-logo-text {
+  font-family: Norse-bold, sans-serif;
+  font-size: 5rem;
+  color: var(--font-color);
+}
+
+figcaption {
+  position: absolute;
+  color: var(--font-color);
+  z-index: 1;
+  bottom: 0%;
+  text-align: center;
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+.ref-link {
+  color: var(--font-color);
+}

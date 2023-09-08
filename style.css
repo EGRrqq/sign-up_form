@@ -7,6 +7,8 @@
   --main-color: white;
   --secondary-color: #596d48;
   --border-focus: #4366ac;
+  --error-color: #e02222;
+  --success-color: #32b820;
 }
 
 *,
@@ -160,4 +162,24 @@ button[type="submit"] {
   background-color: var(--secondary-color);
   color: var(--main-color);
   font-weight: 700;
+}
+
+li {
+  list-style: none;
+}
+
+.form-error {
+  color: var(--error-color);
+}
+
+.form-error::before {
+  content: "\2715";
+}
+
+.form-success {
+  color: var(--success-color);
+}
+
+.form-success::before {
+  content: "\2713";
 }

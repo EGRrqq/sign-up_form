@@ -17,16 +17,15 @@
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  overflow: hidden;
 }
 
-.main {
+main {
   display: flex;
-  flex-wrap: wrap;
   gap: 1rem;
 }
 
-.left-side, figure {
+.left-side,
+figure {
   position: relative;
 }
 
@@ -72,4 +71,39 @@ figcaption {
 
 .ref-link {
   color: var(--font-color);
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+label {
+  text-transform: uppercase;
+}
+
+input, button {
+  border: 1px solid black;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  font-size: large;
+}
+
+.input-container {
+  display: flex;
+}
+
+.input-container > div {
+  display: flex;
+  flex-direction: column;
+}
+
+button[type="submit"] {
+  text-transform: capitalize;
 }

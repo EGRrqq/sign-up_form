@@ -8,48 +8,90 @@
   </head>
   <body>
     <main>
-      <article class="main">
-        <aside class="left-side">
-          <section class="on-top-image">
-            <h1 class="odin-logo-text">odin</h1>
-            <img
-              class="odin-logo-image"
-              src="./public/odin-lined-logo.png"
-              alt="lined logo of odin project"
-            />
+      <aside class="left-side">
+        <section class="on-top-image">
+          <h1 class="odin-logo-text">odin</h1>
+          <img
+            class="odin-logo-image"
+            src="./public/odin-lined-logo.png"
+            alt="lined logo of odin project"
+          />
+        </section>
+
+        <figure>
+          <img
+            class="bg-image"
+            src="./public/aside-bg.avif"
+            alt="background image with green plant leaves in close-up"
+          />
+
+          <figcaption>
+            Photo by
+            <a
+              href="https://unsplash.com/@haliewestphoto"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="ref-link"
+            >
+              Halie West
+            </a>
+            on
+            <a
+              href="https://unsplash.com/"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="ref-link"
+            >
+              Unsplash</a
+            >
+          </figcaption>
+        </figure>
+      </aside>
+
+      <article class="right-side">
+        <section class="text-section">
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams.
+            <br />
+            Sign up <em>now</em> to get started.
+          </p>
+          <p>You <em>know</em> you want to.</p>
+        </section>
+
+        <form>
+          <h2>Let`s do this!</h2>
+
+          <section class="input-container">
+            <div>
+              <label for="first_name">first name</label>
+              <input id="first_name" type="text" />
+
+              <label for="email">email</label>
+              <input id="email" type="email" />
+
+              <label for="password">password</label>
+              <input id="password" type="password" />
+            </div>
+
+            <div>
+              <label for="last_name">last name</label>
+              <input id="last_name" type="text" />
+              <label for="phone_number">phone number</label>
+              <input id="phone_number" type="tel" />
+              <label for="confirm_password">confirm password</label>
+              <input id="confirm_password" type="password" />
+            </div>
           </section>
 
-          <figure>
-            <img
-              class="bg-image"
-              src="./public/aside-bg.avif"
-              alt="background image with green plant leaves in close-up"
-            />
-
-            <figcaption>
-              Photo by
-              <a
-                href="https://unsplash.com/@haliewestphoto"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="ref-link"
-              >
-                Halie West
-              </a>
-              on
-              <a
-                href="https://unsplash.com/"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="ref-link"
-              >
-                Unsplash</a
-              >
-            </figcaption>
-          </figure>
-        </aside>
-
-        <section class="right-side"></section>
+          <section>
+            <button type="submit">create account</button>
+            <p>
+              Already have an account?
+              <a href="./canny.html">Log in</a>
+            </p>
+          </section>
+        </form>
       </article>
     </main>
   </body>

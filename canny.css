@@ -1,0 +1,28 @@
+*,
+*::after,
+*::before {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(240, 178, 178);
+}
+
+main {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+img {
+  max-height: 60dvh;
+  width: auto;
+  border: 3px solid #e0e0e0;
+  border-radius: 0.25rem;
+}

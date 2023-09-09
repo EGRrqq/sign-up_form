@@ -76,7 +76,11 @@ function requirementsList() {
     for (let item in pattern) {
       const errorItem = document.createElement("li");
       pattern[item].link = errorItem;
-      errorItem.classList = "form-error";
+
+      pattern[item].validate
+      ? (pattern[item].link.classList = "form-success")
+      : (pattern[item].link.classList = "form-error");
+      
       errorItem.textContent = pattern[item].message;
       errorList.appendChild(errorItem);
     }

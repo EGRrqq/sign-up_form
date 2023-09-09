@@ -60,12 +60,12 @@
           <p>You <em>know</em> you want to.</p>
         </section>
 
-        <form>
+        <form novalidate>
           <div>
             <h2>Let`s do this!</h2>
 
             <section class="input-container">
-              <div>
+              <!-- <div>
                 <label for="first_name">first name</label>
                 <input required id="first_name" type="text" />
               </div>
@@ -80,15 +80,22 @@
               <div>
                 <label for="phone_number">phone number</label>
                 <input required id="phone_number" type="tel" />
-              </div>
+              </div> -->
               <div class="password-container">
                 <label for="password">password</label>
-                <input required id="password" type="password" minlength="8" />
+                <input
+                  required
+                  id="password"
+                  type="password"
+                  minlength="8"
+                  pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+                  autofocus
+                />
               </div>
-              <div>
+              <!-- <div>
                 <label for="confirm_password">confirm password</label>
                 <input required id="confirm_password" type="password" />
-              </div>
+              </div> -->
             </section>
           </div>
 

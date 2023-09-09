@@ -164,6 +164,13 @@ button[type="submit"] {
   font-weight: 700;
 }
 
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
 li {
   list-style: none;
 }
@@ -173,7 +180,7 @@ li {
 }
 
 .form-error::before {
-  content: "\2715";
+  content: "\2715 \00a0";
 }
 
 .form-success {
@@ -181,5 +188,5 @@ li {
 }
 
 .form-success::before {
-  content: "\2713";
+  content: "\2713 \00a0";
 }
